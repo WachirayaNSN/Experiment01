@@ -4,54 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EX01</title>
+    <title>INDEX</title>
 </head>
-<body style="background-color:rgb(137, 243, 185);text-align:center;color:black;">
-    <div id="TAB1"></div>
-    <div id="TAB2" style=""></div>
-    <img src="หมูทอด.jpg" alt="หมูทอด"></img> 
-
+<body>
+    <div id="main"> 
+        <h1>GRADE STATE</h1>
+        <input type="number" id="text-put">
+        <button onclick="B()">OK</button>
+    </div>  
+      <script>
+             function A(){ 
+                 alert(document.getElementById('text-put').value)
+            }
+            function B(){
+                var x = document.getElementById('text-put').value;
+                 
+                if(x < 50){alert("Grade F")}
+                else if(x >=50 && x < 70){ alert("Grade D")}
+                else if(x >=70 && x < 75){alert('Grade C')}
+                else if(x >=75 && x < 80){alert('Grade B')}
+                else if(x >=80){alert('Grade A')}
+            }
+           </script>
 </body>
-
 </html>
 <style>
-  #TAB1{
-    position: relative;
-    top:20px;
-    left:100px;
-    background-color: rgb(200, 226, 81);
-     height: 270px;
-     width: 270px;
-     border: 20px;
- }
- #TAB2{
-    position: relative;
-    top:20px;
-    left:25px;
-    background-color: rgb(71, 212, 71);
-     height: 270px;
-     width: 270px;
-     border: 20px;
- }
- #TAB3{
-    position: relative;
-    top:20px;
-    left:25px;
-    background-color: rgb(71, 212, 71);
-     height: 270px;
-     width: 270px;
-     border: 20px;
- }
- #TAB4{
-    position: relative;
-    top:20px;
-    left:25px;
-    background-color: rgb(71, 212, 71);
-     height: 270px;
-     width: 270px;
-     border: 20px;
+ #main{
+     text-align: center;
  }
 </style>
-<script>
-
-</script>
