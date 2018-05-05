@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>INDEX</title>
+    <title>GRADE</title>
 </head>
 <body>
     <div id="main"> 
@@ -12,18 +12,25 @@
         <input type="number" id="text-put">
         <button onclick="B()">OK</button>
     </div>  
+        <table border="1" >
+            <tr>
+                <th>TITLE</th>
+            </tr>
+              </table>
+    
       <script>
              function A(){ 
                  alert(document.getElementById('text-put').value)
             }
             function B(){
                 var x = document.getElementById('text-put').value;
-                 
+
                 if(x < 50){alert("Grade F")}
                 else if(x >=50 && x < 70){ alert("Grade D")}
                 else if(x >=70 && x < 75){alert('Grade C')}
                 else if(x >=75 && x < 80){alert('Grade B')}
-                else if(x >=80){alert('Grade A')}
+                else if(x >=80 && x <=100){alert('Grade A')}
+                else if(x>100){alert("ERROR")}
             }
            </script>
 </body>
